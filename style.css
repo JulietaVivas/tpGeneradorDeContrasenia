@@ -1,0 +1,36 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: cadetblue;
+}
+
+.container{
+    width: 600px;
+    height: 100px;
+    background-color: rgb(243, 241, 239);
+    margin-bottom: 24px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.title{
+    text-align: center;
+    align-items: center;
+}
+
+.containerPrincipal{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(243, 241, 239);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
