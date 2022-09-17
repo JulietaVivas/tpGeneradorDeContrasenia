@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Genedador de Contraseñas</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="seccion">
-        <div class="container">
-            <form action="" id="form">
-                
-            </form>
+      <div class="containerDeClave">
+         <form action="" id="form">
+            <label for="text" class="text"></label>
+            <input type="password" name="text" id="password" />
+         </form>
             <span><i class="fa-solid fa-copy"></i></span>
             <span><i class="fa-solid fa-arrow-rotate-left"></i></span>
+      </div>
 
+      <div class="containerPrincipal">
+            <h2 class="title">Personalice su contraseña</h2>
+            <div class="containerChecks">
+                <div class="longitud">
+                    <h4>Longitud</h4>
+                    <form action>
+                        <label for="caracteres" class="caracteres"> 12 caracteres:</label>
+                        <input type="checkbox" name="caracteres" id="caracteres12" />
+                        <label for="caracteres" class="caracteres"> 9 caracteres:</label>
+                        <input type="checkbox" name="caracteres" id="caracteres9" />
+                        <label for="caracteres" class="caracteres"> 6 caracteres:</label>
+                        <input type="checkbox" name="caracteres" id="caracteres6" />
+                    </form>
+                </div>
+                <div class="reglas">
+                    <h4>Reglas</h4>
+                    <form action>
+                        <label for="letras" class="letras">Solo letras:</label>
+                        <input type="checkbox" name="letras" id="soloLetras" />
+                        <label for="numeros" class="numeros">Solo numeros:</label>
+                        <input type="checkbox" name="numeros" id="soloNumeros" />
+                        <label for="todos" class="todos">Todos los caracteres:</label>
+                        <input type="checkbox" name="todos" id="todosLosCaracteres" />
+                    </form>
+                </div>
+                <div class="caracteres">
+                    <h4>Caracteres</h4>
+                    <form action>
+                        <label for="mayus" class="mayus">Mayusculas:</label>
+                        <input type="checkbox" name="mayus" id="mayusculas" />
+                        <label for="minus" class="minus">Minusculas:</label>
+                        <input type="checkbox" name="minus" id="minusculas" />
+                        <label for="num" class="num">Numeros:</label>
+                        <input type="checkbox" name="num" id="numeros" />
+                        <label for="simbolos" class="simbolos">Simbolos:</label>
+                        <input type="checkbox" name="simbolos" id="simbolos" />
+                    </form>
+                </div>
+                <button class="btn">Generar</button>
+            </div>
+            
         </div>
-        
-        <div class="containerPrincipal">
-            <div class="title"><h2> Personalice su contraseña</h2></div>
-            <div class="longitud">
-                <h4>Longitud</h4>
-                <form action>
-                    <label for="terms" class="terms">12 caracteres:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms" class="terms">9 caracteres:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms" class="terms">6 caracteres:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                </form>
-            </div> 
-            <div class="reglas">
-                <h4>Reglas</h4>
-                <form action>
-                    <label for="terms" class="terms">Solo letras:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms" class="terms">Solo numeros:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms" class="terms">Todos los caracteres:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                </form>
-            </div> 
-            <div class="caracteres">
-                <h4>Caracteres</h4>
-                <form action>
-                    <label for="terms" class="terms">Mayusculas:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms" class="terms">Minusculas:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms" class="terms">Numeros:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms" class="terms">Simbolos:</label>
-                    <input type="checkbox" name="terms" id="terms">
-                </form>
-            </div> 
-            <button class="btn">Generar</button>
-        </div>
-        
-
     </section>
 
-
-
-
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

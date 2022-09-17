@@ -11,18 +11,13 @@ body{
     background-color: cadetblue;
 }
 
-.container{
+.containerDeClave{
     width: 600px;
     height: 100px;
     background-color: rgb(243, 241, 239);
     margin-bottom: 24px;
     border-radius: 20px;
     padding: 10px;
-}
-
-.title{
-    text-align: center;
-    align-items: center;
 }
 
 .containerPrincipal{
@@ -33,4 +28,25 @@ body{
     padding: 10px;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
+.title{
+    text-align: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.containerChecks{
+    display:flex ;
+    position: absolute;
+    padding: 50px;
+}
+
+.longitud{
+ 
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+  }
